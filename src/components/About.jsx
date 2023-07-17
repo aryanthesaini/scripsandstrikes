@@ -18,10 +18,13 @@ const About = () => {
           </div>
           <div>
             <p className='text-xl'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ea
-              sit aut ad eligendi. Error, maiores, magni quaerat quam
-              repellendus placeat odio quos nobis ab, officiis quasi ea. Sed,
-              esse?
+              Dive into the world of dynamic finance with your partner in
+              financial success: Scrips and Strikes Investments. Together, we
+              will explore the deepest realms of investment and trading
+              strategies to keep your money safe, secure, and multiplying! Join
+              the financial voyage with our expertise and get ready to pave your
+              path to wealth and stability. Embark on the adventure of a
+              lifetime with us today!
             </p>
           </div>
         </div>
