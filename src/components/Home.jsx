@@ -8,7 +8,7 @@ const Home = () => {
       {/* container */}
       <div className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full'>
         <p className='text-pink-500 text-xl'>Hey, we are</p>
-        <h1 className='text-3xl sm:text-6xl font-extrabold py-4 text-[#ccd6f6]'>
+        <h1 className='text-4xl sm:text-6xl font-extrabold py-4 text-[#ccd6f6]'>
           Scrips And Strikes
         </h1>
         <h2 className='text-2xl sm:text-4xl py-4 text-[#8892b0]'>
