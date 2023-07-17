@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import logo from '../assets/logo.png';
+import Draggable from 'react-draggable';
+
 import {
   FaBars,
   FaTimes,
@@ -47,13 +49,16 @@ const Navbar = () => {
       {/* social icons */}
       <div className=' top-[12%] lg:flex fixed flex-col lg:top-[35%] left-0 '>
         <ul>
-          <li className='w-[150px] h-[40px] lg:w-[160px] lg:h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#075e54] rounded-e-full '>
-            <a
-              className='flex justify-between items-center w-full text-gray-300'
-              href='/'>
-              WhatsApp <FaWhatsapp size={30} />
-            </a>
-          </li>
+          <Draggable axis='y' position={null} grid={[25, 25]} scale={1}>
+            <li className='w-[150px] h-[40px] lg:w-[160px] lg:h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px]  duration-300 bg-[#075e54] rounded-e-full '>
+              <a
+                className='flex justify-between items-center w-full text-gray-300'
+                href='/'>
+                WhatsApp <FaWhatsapp size={30} />
+              </a>
+            </li>
+          </Draggable>
+
           <li className='hidden w-[160px] h-[60px] lg:flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#616087] rounded-e-full'>
             <a
               className='flex justify-between items-center w-full text-gray-300'
