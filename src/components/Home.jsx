@@ -13,6 +13,8 @@ const Home = () => {
         </h1>
         <h2 className='text-2xl sm:text-4xl py-4 text-[#8892b0]'>
           Your gateway to purposeful and efficient
+        </h2>
+        <h2 className='text-2xl sm:text-4xl pb-5 text-pink-500 font-bold'>
           <Typewriter
             options={{
               strings: ['investing', 'trading'],
@@ -21,6 +23,7 @@ const Home = () => {
             }}
           />
         </h2>
+
         <div>
           <button className='text-white border-2 px-6 py-4 my-2 flex items-center hover:bg-pink-500 hover:border-pink-500'>
             View work
