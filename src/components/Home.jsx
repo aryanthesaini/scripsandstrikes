@@ -1,19 +1,34 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
 import { HiArrowNarrowRight } from 'react-icons/hi';
+import { motion } from 'framer-motion';
 
 const Home = () => {
   return (
     <div name='home' className='bg-[#0e232a] w-full h-screen'>
       {/* container */}
       <div className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full'>
-        <p className='text-pink-500 text-xl'>Hey, we are</p>
-        <h1 className='text-4xl sm:text-6xl font-extrabold py-4 text-[#ccd6f6]'>
+        <motion.p
+          initial={{ opacity: 0, x: 200 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
+          className='text-pink-500 text-xl'>
+          Hey, we are
+        </motion.p>
+        <motion.h1
+          initial={{ opacity: 0, x: -200 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
+          className='text-4xl sm:text-6xl font-extrabold py-4 text-[#ccd6f6]'>
           Scrips And Strikes
-        </h1>
-        <h2 className='text-2xl sm:text-4xl py-4 text-[#8892b0]'>
+        </motion.h1>
+        <motion.h2
+          initial={{ opacity: 0, x: -200 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
+          className='text-2xl sm:text-4xl py-4 text-[#8892b0]'>
           Your gateway to purposeful and efficient
-        </h2>
+        </motion.h2>
         <h2 className='text-2xl sm:text-4xl pb-5 text-pink-500 font-bold'>
           <Typewriter
             options={{
