@@ -16,16 +16,22 @@ const Navbar = () => {
     setNav(!nav);
   };
   return (
-    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0e232a] text-gray-300'>
+    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-black text-gray-300 z-10'>
       <div>
-        <img src={logo} alt='logo' style={{ width: '80px' }} />
+        <img src={logo} alt='logo' style={{ width: '0px' }} />
       </div>
       {/* menu */}
       <div>
         <ul className='hidden md:flex '>
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Contact Us</li>
+          <li className=' px-8 py-3'>Home</li>
+          <li className=' px-8 py-3'>About Us</li>
+          <li className=' px-8 py-3'>Contact Us</li>
+          <a href='https://cosmofeed.com/view_group/64b12b3d10834a002be0791b'>
+            {' '}
+            <li className='border-2 rounded-lg px-8 py-3 max-w-xs transition duration-300 ease-in-out hover:scale-110'>
+              Pricing
+            </li>
+          </a>
         </ul>
       </div>
 
@@ -39,11 +45,12 @@ const Navbar = () => {
         className={
           !nav
             ? 'hidden'
-            : 'absolute top-0 left-0 w-full h-screen bg-[#0e232a] flex flex-col justify-center items-center'
+            : 'absolute top-0 left-0 w-full h-screen bg-black flex flex-col justify-center items-center'
         }>
         <li className='text-2xl py-6'>Home</li>
         <li className='text-2xl py-6'>About Us</li>
         <li className='text-2xl py-6'>Contact Us</li>
+        <li className='text-2xl py-6'>Pricing</li>
       </ul>
 
       {/* social icons */}

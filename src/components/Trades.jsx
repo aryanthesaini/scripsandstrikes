@@ -10,12 +10,12 @@ const Trades = () => {
   return (
     <>
       {' '}
-      <div className='text-4xl w-full bg-[#0e232a] py-4 text-center text-gray-300'>
+      <div className='text-5xl w-full bg-black py-4 text-center text-gray-300'>
         Our Trades
       </div>
       <div
         name='contact'
-        className='w-full h-screen bg-[#0e232a] flex justify-center py-10'>
+        className='w-full h-screen bg-black flex justify-center py-10 -z-10'>
         <Carousel
           showThumbs='false'
           infiniteLoop='true'
